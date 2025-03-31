@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 4 - Box Layout</title>
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .boxclass {
+            display: flex;
+            width: 95vw;
+            justify-content: center;
+            gap: 5vw;
+        }
+
+        .imgclass {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imgclass-1 {
+            display: none;
+        }
+
+        .imgclss {
+            width: 200px;
+            height: 200px;
+        }
+
+        .boxcl {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+        }
+
+        .imgcls {
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+        }
+
+        .paracls {
+            width: 150px;
+            font-weight: lighter;
+            color: black;
+            opacity: 50%;
+            text-align: center;
+        }
+
+        @media (max-width: 800px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .imgclass {
+                display: none;
+            }
+
+            .imgclass-1 {
+                display: flex;
+                width: 100vw;
+                justify-content: center;
+            }
+
+            .boxclass {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .boxcl {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="boxclass">
+                <div class="imgclass-1">
+                    <img src="./image.jpg" class="imgclss" />
+                </div>
+                <div class="boxcl">
+                    <div class="item">
+                        <img src="./image.jpg" class="imgcls"/>
+                        <p>Lorem ipsum</p>
+                        <p class="paracls">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="item">
+                        <img src="./image.jpg" class="imgcls"/>
+                        <p>Lorem ipsum</p>
+                        <p class="paracls">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="imgclass">
+                    <img src="./image.jpg" class="imgclss" />
+                </div>
+                <div class="boxcl">
+                    <div class="item">
+                        <img src="./image.jpg" class="imgcls" />
+                        <p>Lorem ipsum</p>
+                        <p class="paracls">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="item">
+                        <img src="./image.jpg" class="imgcls"/>
+                        <p>Lorem ipsum</p>
+                        <p class="paracls">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
