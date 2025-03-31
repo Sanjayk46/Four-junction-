@@ -1,60 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            width: 250px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .details {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .paracls {
+            font-weight: lighter;
+            color: black;
+            opacity: 50%;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 800px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%; /* Adjust width for better fit */
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- section -3-->
-
     <section>
-
-        <div class="container" style="display: flex; flex-direction: row; justify-content: space-around;">
-
+        <div class="container">
             <div class="card">
-
                 <img class="card-img-top" src="person.jpg" alt="image1">
-
                 <div class="details">
-
                     <h3>Adam Bozanich</h3>
-
                     <p>Inventor of network protocol fuzzing...</p>
-
+                </div>
             </div>
-
-        </div>
-
-        <div class="card">
-
-            <img class="card-img-top" src="person.jpg" alt="Adam">
-
-            <div class="details">
-
-                <h3>Adam Bozanich</h3>
-
-                <p class="paracls">Inventor of network protocol fuzzing...</p>
-
-        </div>
-
-    </div>
-
-    <div class="card">
-
-        <img class="card-img-top" src="person.jpg" alt="Adam">
-
-        <div class="details">
-
-            <h3>Adam Bozanich</h3>
-
-            <p>Inventor of network protocol fuzzing...</p>
-
-    </div>
-
-</div>
+            <div class="card">
+                <img class="card-img-top" src="person.jpg" alt="Adam">
+                <div class="details">
+                    <h3>Adam Bozanich</h3>
+                    <p class="paracls">Inventor of network protocol fuzzing...</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="person.jpg" alt="Adam">
+                <div class="details">
+                    <h3>Adam Bozanich</h3>
+                    <p>Inventor of network protocol fuzzing...</p>
+                </div>
+            </div>
         </div>
     </section>
-
 </body>
 </html>
