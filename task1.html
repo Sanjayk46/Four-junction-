@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+ 
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Custom Card</title>
+
+    <style>
+
+        .card {
+
+            width: 50%;
+
+            height: 100%;
+
+            border: 1px solid #ddd;
+
+            border-radius: 8px;
+
+            overflow: hidden;
+
+        }
+
+
+ 
+
+        .cards {
+
+            width: 100%;
+
+            border: 1px solid #ddd;
+
+            border-radius: 8px;
+
+        }
+
+
+ 
+
+        /* .card:hover {
+
+            transform: scale(1.05);
+
+        } */
+
+
+ 
+
+        .card-img-top {
+
+            width: 100%;
+
+            /* height: 180px; */
+
+            height: 50%;
+
+            object-fit: cover;
+
+        }
+
+
+ 
+
+        .card-img-topcls {
+
+            width: 100%;
+
+            height: 100px;
+
+            object-fit: cover;
+
+        }
+
+
+ 
+
+        .card-body {
+
+            padding: 15px;
+
+            padding-left: 10%;
+
+            padding-right: 10%;
+
+        }
+
+
+ 
+
+        .card-text {
+
+            font-size: 14px;
+
+            color: #333;
+
+            opacity: 50%;
+
+        }
+
+
+ 
+
+        .buttoncls {
+
+            /* margin-top: 100px; */
+
+            width: 150px;
+
+            height: 50px;
+
+            border-radius: 25px;
+
+            border: 2px solid white;
+
+            text-align: center;
+
+            color: white;
+
+        }
+
+
+ 
+
+        .card1 {
+
+            width: 50%;
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 20px;
+
+            align-items: center;
+
+        }
+
+
+ 
+
+        .card6 {
+
+            width: 50%;
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 20px;
+
+            align-items: center;
+
+        }
+
+
+ 
+
+        .card2 {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: start;
+
+            height: 50%;
+
+            gap: 20px;
+
+            position: relative;
+
+        }
+
+
+ 
+
+        .card-btn {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            gap: 5px;
+
+        }
+
+
+ 
+
+        .img-card-small {
+
+            height: 25px;
+
+            width: 25px;
+
+            border-radius: 50%;
+
+        }
+
+
+ 
+
+        .profile-card {
+
+            height: 30px;
+
+            width: 30px;
+
+            border-radius: 50%;
+
+            position: absolute;
+
+            bottom: -10px;
+
+            left: 30px;
+
+        }
+
+
+ 
+
+        .card-title-text {
+
+            margin-bottom: 20px;
+
+            padding-bottom: 30px;
+
+            color: white;
+
+            /* background-color: rgb(73, 111, 234); */
+
+        }
+
+
+ 
+
+        .card-text-para {
+
+            color: white;
+
+        }
+
+
+ 
+
+        .card-title,
+
+        .card-text-para-1 {
+
+            color: purple;
+
+
+ 
+
+        }
+
+
+ 
+
+        .card-text-para-1 {
+
+            font-size: 14px;
+
+            font-weight: bold;
+
+        }
+
+
+ 
+
+        .card-body-1 {
+
+            display: flex;
+
+            gap: 10px;
+
+        }
+
+
+ 
+
+        @media (max-width: 800px) {
+
+            .card-body-1 {
+
+                display: flex;
+
+                flex-direction: column;
+
+                gap: 15px;
+
+            }
+
+
+ 
+
+            .container {
+
+                display: flex;
+
+                flex-direction: column;
+
+            }
+
+
+ 
+
+            .card1 {
+
+                width: 100%;
+
+                display: flex;
+
+                flex-direction: column;
+
+                gap: 20px;
+
+                align-items: center;
+
+            }
+
+
+ 
+
+            .card6 {
+
+                width: 100%;
+
+                display: flex;
+
+                flex-direction: column;
+
+                gap: 20px;
+
+                align-items: center;
+
+            }
+
+        }
+
+
+ 
+
+        @media (max-width: 400px) {
+
+            .card2{
+
+                flex-direction: column;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+ 
+
+<body>
+
+    <div class="container">
+
+        <div class="card-body-1">
+
+            <div class="card1" style="background-color: rgb(128, 0, 128);">
+
+                <img class="card-img-top" src="image.jpg" alt="Card image cap">
+
+                <div class="card-body">
+
+                    <h4 class="card-title-text"> 182 Recipe</h4>
+
+                    <div style="margin-bottom: 35px;">
+
+                        <h3 class="card-title-text">Dodaj życiu odrobinę słodkości</h3>
+
+                        <p class="card-text-para">Wyroby cukiernicze to nasza wielka pasja. Codziennie pracujemy nad
+
+                            nowymi recepturami, aby dostarczać to co najlepsze.</p>
+
+                    </div>
+
+                    <div class="buttoncls" style="display: flex; justify-content: space-around;">
+
+                        <p> ZOBACZ </p>
+
+                        <p> ></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card6">
+
+
+ 
+
+                <div class="card2">
+
+                    <div class="cards">
+
+                        <div style="position: relative;">
+
+                            <img class="card-img-topcls" src="image.jpg" alt="Card image cap">
+
+                            <img src="./person.jpg" class="profile-card" />
+
+                        </div>
+
+                        <div class="card-body">
+
+                            <h3 class="card-title"> Miętowy chłodnik z dodatkiem avokado</h3>
+
+                            <p class="card-text">Klasyczny chłodnik ze świeżym i orzeźwiającym avokado
+
+                                Babeczki ze śm i malinami</p>
+
+                            <div class="card-btn">
+
+                                <div class="card-btn">
+
+                                    <img class="img-card-small" src="./image.jpg" />
+
+                                    <p class="card-text-para-1">DESERY</p>
+
+                                </div>
+
+                                <div class="card-btn">
+
+                                    <img class="img-card-small" src="./image.jpg" />
+
+                                    <p class="card-text-para-1">LATWE</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cards">
+
+                        <div style="position: relative;">
+
+                            <img class="card-img-topcls" src="image.jpg" alt="Card image cap">
+
+                            <img src="./person.jpg" class="profile-card" />
+
+                        </div>
+
+                        <div class="card-body">
+
+                            <h3 class="card-title"> Miętowy chłodnik z dodatkiem avokado</h3>
+
+                            <p class="card-text">Klasyczny chłodnik ze świeżym i orzeźwiającym avokado
+
+                                Babeczki ze śm i malinami</p>
+
+                            <div class="card-btn">
+
+                                <div class="card-btn">
+
+                                    <img class="img-card-small" src="./image.jpg" />
+
+                                    <p class="card-text-para-1">DESERY</p>
+
+                                </div>
+
+                                <div class="card-btn">
+
+                                    <img class="img-card-small" src="./image.jpg" />
+
+                                    <p class="card-text-para-1">LATWE</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card2">
+
+                    <div class="cards">
+
+                        <div style="position: relative;">
+
+                            <img class="card-img-topcls" src="image.jpg" alt="Card image cap">
+
+                            <img src="./person.jpg" class="profile-card" />
+
+                        </div>
+
+                        <div class="card-body">
+
+                            <h3 class="card-title"> Miętowy chłodnik z dodatkiem avokado</h3>
+
+                            <p class="card-text">Klasyczny chłodnik ze świeżym i orzeźwiającym avokado
+
+                                Babeczki ze śm i malinami</p>
+
+                            <div class="card-btn">
+
+                                <div class="card-btn">
+
+                                    <img class="img-card-small" src="./image.jpg" />
+
+                                    <p class="card-text-para-1">DESERY</p>
+
+                                </div>
+
+                                <div class="card-btn">
+
+                                    <img class="img-card-small" src="./image.jpg" />
+
+                                    <p class="card-text-para-1">LATWE</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cards">
+
+                        <div style="position: relative;">
+
+                            <img class="card-img-topcls" src="image.jpg" alt="Card image cap">
+
+                            <img src="./person.jpg" class="profile-card" />
+
+                        </div>
+
+                        <div class="card-body">
+
+                            <h3 class="card-title">Miętowy chłodnik z dodatkiem avokado</h3>
+
+                            <p class="card-text">Klasyczny chłodnik ze świeżym i orzeźwiającym avokado
+
+                                Babeczki ze śm i malinami</p>
+
+                            <div class="card-btn">
+
+                                <div class="card-btn">
+
+                                    <img class="img-card-small" src="./image.jpg" />
+
+                                    <p class="card-text-para-1">DESERY</p>
+
+                                </div>
+
+                                <div class="card-btn">
+
+                                    <img class="img-card-small" src="./image.jpg" />
+
+                                    <p class="card-text-para-1">LATWE</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
