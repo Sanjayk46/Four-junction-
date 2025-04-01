@@ -1,166 +1,336 @@
 <!DOCTYPE html>
 
-
- 
-
 <html lang="en">
-
-
- 
 
 <head>
 
-
- 
-
     <meta charset="UTF-8">
-
-
- 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
- 
-
-    <title>Frontend Skill Test - Section 3</title>
-
-
- 
-
-    <link rel="stylesheet" href="task3.css">
-
-
- 
+    <title>Document</title>
 
 </head>
+
+<style>
+
+    body {
+
+        background: black;
+
+        padding: 10px;
+
+    }
+
+
+ 
+
+    .img1 {
+
+        display: flex;
+
+        width: 50%;
+
+        justify-content: end;
+
+    }
+
+
+ 
+
+    .img2 {
+
+        display: flex;
+
+        width: 50%;
+
+        justify-content: center;
+
+    }
+
+
+ 
+
+    .empty {
+
+        height: 90px;
+
+    }
+
+
+ 
+
+    .card-head {
+
+        display: flex;
+
+        gap: 10px;
+
+    }
+
+
+ 
+
+    .card {
+
+        color: white;
+
+        border-radius: 5%;
+
+        padding-left: 10px;
+
+        padding-right: 10px;
+
+        max-height: 300px;
+
+        padding-top: 5px;
+
+        transition: background-color 0.3s ease-in-out;
+
+    }
+
+
+ 
+
+    .card-body {
+
+        width: 33%;
+
+    }
+
+
+ 
+
+    .card-text-light {
+
+        opacity: 50%;
+
+        font-size: 14px;
+
+    }
+
+
+ 
+
+    .card-text {
+
+        font-size: 16px;
+
+    }
+
+
+ 
+
+    .card:hover {
+
+        background-color: gray;
+
+    }
+
+
+ 
+
+    .card-text-light:hover {
+
+        opacity: 100%;
+
+        font-weight: 100;
+
+    }
+
+
+ 
+
+    @media (max-width: 400px) {
+
+        .card-body {
+
+            width: 100%;
+
+        }
+
+        .card-head {
+
+       flex-direction: column;
+
+    }
+
+    .img1{
+
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+    }
+
+    .img2{
+
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+    }
+
+    .empty{
+
+        height: 5px;
+
+    }
+
+    }
+
+    @media (max-width: 786px) {
+
+        .card-body {
+
+            width: 100%;
+
+        }
+
+        .card-head {
+
+       flex-direction: column;
+
+       align-items: center;
+
+    }
+
+    .img1{
+
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+    }
+
+    .img2{
+
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+    }
+
+    .empty{
+
+        height: 5px;
+
+    }
+
+    }
+
+</style>
 
 
  
 
 <body>
 
+    <div class="card-head">
 
- 
+        <div class="img1">
 
-    <section>
+            <img src="./dockerimg.png" style="height: 200px; object-fit: contain;" />
 
+        </div>
 
- 
+        <div class="img2">
 
-        <div class="container">
-
-
- 
-
-            <div class="card">
-
-
- 
-
-                <img class="card-img-top" src="person.jpg" alt="Greg Osuri">
-
-
- 
-
-                <div class="details">
-
-
- 
-
-                    <h3>Greg Osuri</h3>
-
-
- 
-
-                    <p>Founder & CEO</p>
-
-                </div>
-
-
- 
-
-            </div>
-
-
- 
-
-            <div class="card center">
-
-
- 
-
-                <img class="card-img-top" src="person.jpg" alt="Adam Bozanich">
-
-
- 
-
-                <div class="details">
-
-
- 
-
-                    <h3>Adam Bozanich</h3>
-
-
- 
-
-                    <p>Inventor of network protocol fuzzing. Worked at PagerDuty, One Kings Lane, Symantec.</p>
-
-
- 
-
-                </div>
-
-
- 
-
-            </div>
-
-
- 
-
-            <div class="card">
-
-
- 
-
-                <img class="card-img-top" src="person.jpg" alt="Gregory Gopman">
-
-
- 
-
-                <div class="details">
-
-
- 
-
-                    <h3>Gregory Gopman</h3>
-
-
- 
-
-                    <p>Founder & CEO</p>
-
-                </div>
-
-
- 
-
-            </div>
-
-
- 
+            <img src="./tech.png" style="height: 200px; object-fit: contain;">
 
         </div>
 
 
  
 
-    </section>
+    </div>
+
+    <div class="empty"></div>
+
+    <div class="card-head">
+
+        <div class="card-body">
+
+            <div class="card">
+
+                <p>Lorem ipsum dolor sit amet</p>
+
+                <p class="card-text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus error
+
+                    explicabo ut et iure temporibus numquam perferendis eveniet porro! Explicabo cum aspernatur officia
+
+                    tenetur harum iusto deserunt unde temporibus?</p>
+
+            </div>
+
+        </div>
+
+        <div class="card-body">
+
+            <div class="card">
+
+                <p class="card-text">Lorem ipsum dolor sit amet</p>
+
+                <p class="card-text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus error
+
+                    explicabo ut et iure temporibus numquam perferendis eveniet porro! Explicabo cum aspernatur officia
+
+                    tenetur harum iusto deserunt unde temporibus?
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque minima laudantium quos obcaecati
+
+                    molestias placeat quidem, excepturi cumque? Natus enim tenetur velit libero iure. Eveniet voluptatem
+
+                    commodi ducimus id laudantium!
+
+                </p>
+
+            </div>
+
+        </div>
 
 
  
+
+        <div class="card-body">
+
+            <div class="card">
+
+                <p>Lorem ipsum dolor sit amet</p>
+
+                <p class="card-text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus error
+
+                    explicabo ut et iure temporibus numquam perferendis eveniet porro! Explicabo cum aspernatur officia
+
+                    tenetur harum iusto deserunt unde temporibus?
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, dolore mollitia! Recusandae et,
+
+                    asperiores ratione atque fugit sit eum natus doloremque possimus! Voluptas at enim, perferendis
+
+                    nobis iste ex nulla.
+
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius molestias rem inventore fuga
+
+                    cupiditate ex rerum harum esse magni voluptates nesciunt porro distinctio placeat, mollitia
+
+                    exercitationem doloremque enim praesentium. Molestias.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </body>
 
