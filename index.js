@@ -101,7 +101,7 @@ function drawWaterTable(heights, waterLevels) {
 
     for (let col = 0; col < heights.length; col++) {
       const td = document.createElement("td");
-      td.style.width = "40px";
+      td.style.width = "70px";
       td.style.height = "30px";
       td.style.border = "1px solid black";
 
