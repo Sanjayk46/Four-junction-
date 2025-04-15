@@ -14,27 +14,27 @@ function calculateWater() {
   }
 
   // Validate all numbers
-  if (heights.some(isNaN)) {
-    alert("Please enter valid digits only.");
-    return;
-  }
+  // if (heights.some(isNaN)) {
+  //   alert("Please enter valid digits only.");
+  //   return;
+  // }
 
-  // Check that there's at least one 0 between non-zero heights
-  const firstNonZero = heights.findIndex(h => h !== 0);
-  const lastNonZero = heights.length - 1 - [...heights].reverse().findIndex(h => h !== 0);
-  let zeroFound = false;
+  // // Check that there's at least one 0 between non-zero heights
+  // const firstNonZero = heights.findIndex(h => h !== 0);
+  // const lastNonZero = heights.length - 1 - [...heights].reverse().findIndex(h => h !== 0);
+  // let zeroFound = false;
 
-  for (let i = firstNonZero + 1; i < lastNonZero; i++) {
-    if (heights[i] === 0) {
-      zeroFound = true;
-      break;
-    }
-  }
+  // for (let i = firstNonZero + 1; i < lastNonZero; i++) {
+  //   if (heights[i] === 0) {
+  //     zeroFound = true;
+  //     break;
+  //   }
+  // }
 
-  if (!zeroFound) {
-    alert("There must be at least one 0 between non-zero heights.");
-    return;
-  }
+  // if (!zeroFound) {
+  //   alert("There must be at least one 0 between non-zero heights.");
+  //   return;
+  // }
 
   const n = heights.length;
   let leftMax = new Array(n).fill(0);
