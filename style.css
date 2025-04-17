@@ -2,104 +2,244 @@ body {
 
     font-family: Arial, sans-serif;
 
+
     text-align: center;
+
+
+ 
 
     margin: 20px;
 
+
+ 
+
     background-color: #f4f4f4;
+
+
+ 
 
 }
 
 
+
+
+ 
 
 button {
 
+
+ 
+
     padding: 10px;
+
+
+ 
 
     cursor: pointer;
 
+
+ 
+
     background-color: #007bff;
+
+
+ 
 
     color: white;
 
+
+ 
+
     border: none;
+
+
+ 
 
     border-radius: 5px;
 
+
+ 
+
 }
 
 
+
+
+ 
 
 button:hover {
 
+
+ 
+
     background-color: #0056b3;
+
+
+ 
 
 }
 
 
+
+
+ 
 
 h1 {
 
+
+ 
+
     color: #333;
 
+
+ 
+
 }
+
+
+ 
 
 #water-result{
 
+
+ 
+
   text-align: center;
+
+
+ 
 
   padding-left: 3;
 
+
+ 
+
 }
+
+
+ 
 
 #table-container, #result-table-container {
 
+
+ 
+
     display: flex;
+
+
+ 
 
     justify-content: center;
 
+
+ 
+
     margin-top: 0px;
+
+
+ 
 
 }
 
 
+
+
+ 
 
 table {
 
+
+ 
+
     border-collapse: collapse;
+
+
+ 
 
     margin-top: 10px;
 
+
+ 
+
 }
 
 
+
+
+ 
 
 td {
 
-    width: 70px;
 
-    height: 30px;
+ 
+
+    width: 80px;
+
+
+ 
+
+    height: 20px;
+
+
+ 
 
     border: 1px solid black;
 
+
+ 
+
     text-align: center;
+
+
+ 
 
     background-color: white; /* Default empty cell */
 
+
+ 
+
 }
 
 
+
+
+ 
 
 .block {
 
+
+ 
+
     background-color: yellow; /* Blocks are yellow */
+
+
+ 
 
 }
 
 
 
+
+ 
+
 .water {
 
+
+ 
+
     background-color: skyblue; /* Water is sky blue */
+
+
+ 
+
+}
+
+@media (max-width: 450px) {
+
+   .water-result{
+
+    text-align: left;
+
+   }
 
 }
